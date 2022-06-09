@@ -21,9 +21,9 @@
           <div class="slider-tab"></div>
         </div>
         <div class="form-inner">
-          <form action="#" class="login">
+          <form action="quiz.html" method="post" class="login">
             <div class="field">
-              <input type="text" placeholder="Nama Kamu" required>
+              <input type="text" placeholder="Nama Kamu" value="<?=isset($_POST['nama']) ? $_POST['nama'] : ''?> required>
             </div>
             <div class="field">
               <input type="password" placeholder="Password" disabled>
