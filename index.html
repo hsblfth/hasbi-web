@@ -13,11 +13,7 @@
     <!-- start Quiz button -->
 <centre>
 <h1>Halo</h1>
-<?php
-   echo $_GET['nama'];
-   echo "<br />";
 
-?>
 	</centre>
     <div class="start_btn"><button>Mulai Quiz</button></div>
 
@@ -89,11 +85,10 @@
 <div class="popup-container">
 
 <form action="#" method="post" class="popup-form">
-<h2>Cara Bermain :</h2>
-<p>1. Tekan tombol pilih untuk menjawab.</p>
-<p>2. Isi bagian 1 kotak 1 huruf</p>
-<p>3. Jika jawaban benar, maka kotak akan menjadi warna hijau</p>
-<p>   dan nilai akan bertambah 10</p>
+<div class="row">
+		<label>Nama</label>
+		<input type="text" name="nama" value="<?=isset($_POST['nama']) ? $_POST['nama'] : ''?>"/>
+	</div>
 </form>
 <a class="popup-close" href="#popup">TUTUP</a>
 </div>
