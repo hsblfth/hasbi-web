@@ -11,6 +11,12 @@
 </head>
 <body>
     <!-- start Quiz button -->
+    <?php
+	if (isset($_POST['submit'])) {
+		echo '<h1>Halo</h1>';
+		echo '<ul>';
+		echo '<li>Nama: ' . $_POST['nama'] . '</li>';
+	}?>
     <div class="start_btn"><button>Mulai Quiz</button></div>
 
     <!-- Info Box -->
